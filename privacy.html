@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Fantasy One</title>
+  <title>Privacy Policy — Paddock Pass</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -74,6 +74,187 @@
       font-size: 14px;
       transition: color 0.15s;
     }
+
+    nav a:hover, nav a.active { color: var(--text); }
+    nav a.active { color: var(--accent); }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .page-header {
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .meta { color: var(--muted); font-size: 14px; }
+    .meta strong { color: var(--text); }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: -0.2px;
+    }
+
+    p { margin-bottom: 14px; color: #c8c8d0; }
+
+    ul { padding-left: 20px; margin-bottom: 14px; }
+    li { color: #c8c8d0; margin-bottom: 6px; }
+    li strong { color: var(--text); }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .callout {
+      background: var(--accent-dim);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 14px 16px;
+      margin: 20px 0;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .not-collected {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .not-collected ul { margin: 0; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--muted); text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 26px; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">PP</div>
+  <div class="logo-text">Paddock Pass <span>Legal</span></div>
+  <nav>
+    <a href="privacy.html" class="active">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      <strong>Paddock Pass</strong> &nbsp;·&nbsp;
+      Effective Date: March 31, 2026 &nbsp;·&nbsp;
+      Operated by Nicholas Daniele
+    </p>
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>We operate the Paddock Pass mobile application ("the App"). This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.</p>
+  <p>By using the App, you agree to the collection and use of information as described in this policy.</p>
+
+  <h2>2. Information We Collect</h2>
+  <ul>
+    <li><strong>Account information:</strong> Email address, display name, and username when you register.</li>
+    <li><strong>Game activity:</strong> Team selections, chip activations, transfer history, and league participation.</li>
+    <li><strong>League content:</strong> League names, icons, and settings you create.</li>
+    <li><strong>Authentication tokens:</strong> Session identifiers used to verify your identity. Stored locally on your device and not used for tracking or advertising.</li>
+    <li><strong>Basic device information:</strong> Device type, OS version, and app version for debugging purposes.</li>
+  </ul>
+
+  <h2>3. Information We Do NOT Collect</h2>
+  <div class="not-collected">
+    <ul>
+      <li>Location data</li>
+      <li>Contacts or address book</li>
+      <li>Photos, camera, or microphone</li>
+      <li>Health or fitness data</li>
+      <li>Financial or payment information</li>
+      <li>Advertising identifiers (no ads, no ad-tracking SDKs)</li>
+      <li>Browsing history or cross-app tracking data</li>
+    </ul>
+  </div>
+
+  <h2>4. How We Use Your Information</h2>
+  <ul>
+    <li><strong>Operate the service:</strong> Manage your account, calculate scores, run leagues, and display standings.</li>
+    <li><strong>Authenticate you:</strong> Verify your identity on each request.</li>
+    <li><strong>Improve the App:</strong> Diagnose issues and fix bugs.</li>
+    <li><strong>Enforce our Terms:</strong> Detect and prevent misuse or unauthorized access.</li>
+  </ul>
+  <div class="callout">We do <strong>not</strong> use your data for advertising, profiling, or behavioral targeting.</div>
+
+  <h2>5. Data Storage and Security</h2>
+  <ul>
+    <li><strong>Infrastructure:</strong> Your data is stored on US-based servers. All data in transit is encrypted via HTTPS/TLS.</li>
+    <li><strong>Authentication:</strong> Firebase Authentication (Google) handles identity management. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+    <li><strong>Access:</strong> Only the App's backend services access your data. Administrative access is limited to service operators.</li>
+  </ul>
+  <p>We take reasonable measures to protect your data, but no method of transmission or storage is 100% secure.</p>
+
+  <h2>6. Data Sharing</h2>
+  <div class="callout">We do <strong>not</strong> sell, rent, or trade your personal data to third parties.</div>
+  <ul>
+    <li><strong>With other users:</strong> Your username, team name, scores, and league standings are visible to other league members. Your email is never shown to other users.</li>
+    <li><strong>Service providers:</strong> We use Firebase Authentication (Google) for identity management and US-based infrastructure providers for hosting. We share only the minimum data necessary to operate the service.</li>
+    <li><strong>Legal requirements:</strong> We may disclose data if required by law or governmental request.</li>
+  </ul>
+
+  <h2>7. Data Retention</h2>
+  <ul>
+    <li><strong>Active accounts:</strong> We retain your data for as long as your account is active.</li>
+    <li><strong>Deleted accounts:</strong> When you delete your account, your user record and all personally identifiable information are permanently removed. Retained game data (scores, standings) is anonymized.</li>
+  </ul>
+
+  <h2>8. Your Rights</h2>
+  <p>You may have the right to access, correct, delete, or export your personal data. Account deletion is available in-app via Settings &gt; Delete Account. To exercise any other rights, contact us at the email below.</p>
+  <div class="callout">We do <strong>not</strong> sell or share your personal information. To submit a data request, contact <a href="mailto:support@chaunga.com">support@chaunga.com</a>.</div>
+
+  <h2>9. Children's Privacy</h2>
+  <p>The App is not intended for children under 13. By creating an account, users confirm they are at least 13 years of age. If we become aware that a child under 13 has provided personal data, we will delete that account promptly.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we do, we will update the effective date above and notify you within the App. Continued use after an update constitutes acceptance.</p>
+
+  <h2>11. Contact Us</h2>
+  <p><strong>Email:</strong> <a href="mailto:support@chaunga.com">support@chaunga.com</a></p>
+
+  <p style="margin-top: 40px; color: var(--muted); font-size: 13px;"><em>Last updated: March 31, 2026.</em></p>
+</main>
+
+<footer>
+  <p>© 2026 Paddock Pass · Nicholas Daniele</p>
+  <p style="margin-top: 8px;"><a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Service</a> &nbsp;·&nbsp; <a href="mailto:support@chaunga.com">support@chaunga.com</a></p>
+</footer>
+
+</body>
+</html>
 
     nav a:hover, nav a.active {
       color: var(--text);
